@@ -1,0 +1,151 @@
+[
+  {
+    "id": "vital-brooklyn",
+    "name": "Vital Climbing Gym — Brooklyn",
+    "address": "221 N 12th St, Brooklyn, NY 11211",
+    "lat": 40.7225,
+    "lng": -73.9573,
+    "type": "bouldering",
+    "hours": {
+      "Mon-Fri": "7am–11pm",
+      "Sat-Sun": "8am–10pm"
+    },
+    "memberRates": { "daily": 38, "monthly": 159 },
+    "website": "https://www.vitalclimbinggym.com",
+    "neighborhood": "Williamsburg"
+  },
+  {
+    "id": "vital-harlem",
+    "name": "Vital Climbing Gym — Harlem",
+    "address": "2379 Adam Clayton Powell Jr Blvd, New York, NY 10030",
+    "lat": 40.8195,
+    "lng": -73.9397,
+    "type": "bouldering",
+    "hours": {
+      "Mon-Fri": "7am–11pm",
+      "Sat-Sun": "8am–10pm"
+    },
+    "memberRates": { "daily": 38, "monthly": 159 },
+    "website": "https://www.vitalclimbinggym.com",
+    "neighborhood": "Harlem"
+  },
+  {
+    "id": "brooklyn-boulders-queensbridge",
+    "name": "Brooklyn Boulders Queensbridge",
+    "address": "23-10 41st Ave, Long Island City, NY 11101",
+    "lat": 40.7505,
+    "lng": -73.9407,
+    "type": "both",
+    "hours": {
+      "Mon-Fri": "6am–11pm",
+      "Sat-Sun": "8am–9pm"
+    },
+    "memberRates": { "daily": 39, "monthly": 165 },
+    "website": "https://brooklynboulders.com",
+    "neighborhood": "Long Island City"
+  },
+  {
+    "id": "cliffs-lic",
+    "name": "The Cliffs at LIC",
+    "address": "11-11 44th Dr, Long Island City, NY 11101",
+    "lat": 40.7476,
+    "lng": -73.9522,
+    "type": "both",
+    "hours": {
+      "Mon-Fri": "6am–11pm",
+      "Sat-Sun": "8am–10pm"
+    },
+    "memberRates": { "daily": 38, "monthly": 155 },
+    "website": "https://thecliffsclimbing.com",
+    "neighborhood": "Long Island City"
+  },
+  {
+    "id": "cliffs-gowanus",
+    "name": "The Cliffs at Gowanus",
+    "address": "233 Nevins St, Brooklyn, NY 11217",
+    "lat": 40.6795,
+    "lng": -73.9857,
+    "type": "both",
+    "hours": {
+      "Mon-Fri": "6am–11pm",
+      "Sat-Sun": "8am–10pm"
+    },
+    "memberRates": { "daily": 38, "monthly": 155 },
+    "website": "https://thecliffsclimbing.com",
+    "neighborhood": "Gowanus"
+  },
+  {
+    "id": "cliffs-harlem",
+    "name": "The Cliffs at Harlem",
+    "address": "655 W 168th St, New York, NY 10032",
+    "lat": 40.8414,
+    "lng": -73.9395,
+    "type": "rope",
+    "hours": {
+      "Mon-Fri": "6am–11pm",
+      "Sat-Sun": "8am–10pm"
+    },
+    "memberRates": { "daily": 35, "monthly": 145 },
+    "website": "https://thecliffsclimbing.com",
+    "neighborhood": "Washington Heights"
+  },
+  {
+    "id": "gp81",
+    "name": "GP81",
+    "address": "81 Washington Pl, New York, NY 10011",
+    "lat": 40.7318,
+    "lng": -73.9992,
+    "type": "bouldering",
+    "hours": {
+      "Mon-Fri": "7am–11pm",
+      "Sat-Sun": "9am–9pm"
+    },
+    "memberRates": { "daily": 35, "monthly": 149 },
+    "website": "https://gp-81.com",
+    "neighborhood": "Bushwick"
+  },
+  {
+    "id": "brooklyn-uprising",
+    "name": "Brooklyn Uprising",
+    "address": "Main St, Brooklyn, NY 11201",
+    "lat": 40.7033,
+    "lng": -73.9903,
+    "type": "bouldering",
+    "hours": {
+      "Mon-Sun": "Dawn–Dusk (outdoor, seasonal)"
+    },
+    "memberRates": { "daily": 0, "monthly": 0 },
+    "website": "https://www.instagram.com/brooklynuprising/",
+    "neighborhood": "DUMBO"
+  },
+  {
+    "id": "steep-rock-west",
+    "name": "Steep Rock West",
+    "address": "1506 Lexington Ave, New York, NY 10029",
+    "lat": 40.7877,
+    "lng": -73.9503,
+    "type": "bouldering",
+    "hours": {
+      "Mon-Fri": "6:30am–11pm",
+      "Sat-Sun": "8am–10pm"
+    },
+    "memberRates": { "daily": 33, "monthly": 139 },
+    "website": "https://www.steeprock.org",
+    "neighborhood": "East Harlem"
+  },
+  {
+    "id": "metrorock-bushwick",
+    "name": "MetroRock Bushwick",
+    "address": "321 Starr St, Brooklyn, NY 11237",
+    "lat": 40.7031,
+    "lng": -73.9213,
+    "type": "both",
+    "hours": {
+      "Mon-Fri": "6am–11pm",
+      "Sat-Sun": "8am–10pm"
+    },
+    "memberRates": { "daily": 32, "monthly": 139 },
+    "website": "https://www.metrorock.com",
+    "neighborhood": "Bushwick"
+  }
+]
