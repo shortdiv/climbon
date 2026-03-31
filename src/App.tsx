@@ -35,7 +35,7 @@ function App() {
     <div className="app">
       <header>
         <h1>ClimbOn</h1>
-        <p className="subtitle">NYC Climbing Gyms</p>
+        <p className="subtitle">NYC Climbing Gym Finder</p>
       </header>
       <FilterBar
         typeFilter={typeFilter}
