@@ -92,9 +92,9 @@
   {
     "id": "gp81",
     "name": "GP81",
-    "address": "81 Washington Pl, New York, NY 10011",
-    "lat": 40.7318,
-    "lng": -73.9992,
+    "address": "379 Jefferson St, Brooklyn, NY 11237",
+    "lat": 40.6935,
+    "lng": -73.9213,
     "type": "bouldering",
     "hours": {
       "Mon-Fri": "7am–11pm",
