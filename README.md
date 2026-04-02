@@ -1,4 +1,10 @@
-# React + TypeScript + Vite
+# ClimbOn - NYC Climbing Gym Finder
+
+A React application for discovering and exploring climbing gyms across New York City.
+
+## Tech Stack
+
+React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
