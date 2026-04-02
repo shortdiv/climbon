@@ -1,3 +1,6 @@
+/**
+ * Represents a climbing gym in NYC
+ */
 export interface Gym {
   id: string;
   name: string;
