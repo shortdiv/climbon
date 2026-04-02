@@ -14,9 +14,15 @@ function App() {
   const [view, setView] = useState<"map" | "list">("map");
   const [typeFilter, setTypeFilter] = useState<GymType>("all");
   const [neighborhoodFilter, setNeighborhoodFilter] = useState("");
+  const [managementFilter, setManagementFilter] = useState("");
 
   const neighborhoods = useMemo(
     () => [...new Set(gyms.map((g) => g.neighborhood))].sort(),
+    []
+  );
+
+  const managementCompanies = useMemo(
+    () => [...new Set(gyms.map((g) => g.management))].sort(),
     []
   );
 
@@ -26,9 +32,11 @@ function App() {
         if (typeFilter !== "all" && g.type !== typeFilter) return false;
         if (neighborhoodFilter && g.neighborhood !== neighborhoodFilter)
           return false;
+        if (managementFilter && g.management !== managementFilter)
+          return false;
         return true;
       }),
-    [typeFilter, neighborhoodFilter]
+    [typeFilter, neighborhoodFilter, managementFilter]
   );
 
   return (
@@ -48,6 +56,9 @@ function App() {
         neighborhoodFilter={neighborhoodFilter}
         onNeighborhoodChange={setNeighborhoodFilter}
         neighborhoods={neighborhoods}
+        managementFilter={managementFilter}
+        onManagementChange={setManagementFilter}
+        managementCompanies={managementCompanies}
       />
       <div className="view-toggle">
         <button

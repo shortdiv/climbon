@@ -9,6 +9,9 @@ interface FilterBarProps {
   neighborhoodFilter: string;
   onNeighborhoodChange: (n: string) => void;
   neighborhoods: string[];
+  managementFilter: string;
+  onManagementChange: (m: string) => void;
+  managementCompanies: string[];
 }
 
 export function FilterBar({
@@ -17,6 +20,9 @@ export function FilterBar({
   neighborhoodFilter,
   onNeighborhoodChange,
   neighborhoods,
+  managementFilter,
+  onManagementChange,
+  managementCompanies,
 }: FilterBarProps) {
   return (
     <div className="filter-bar">
@@ -44,6 +50,20 @@ export function FilterBar({
           {neighborhoods.map((n) => (
             <option key={n} value={n}>
               {n}
+            </option>
+          ))}
+        </select>
+      </div>
+      <div className="filter-group">
+        <label>Management</label>
+        <select
+          value={managementFilter}
+          onChange={(e) => onManagementChange(e.target.value)}
+        >
+          <option value="">All management</option>
+          {managementCompanies.map((m) => (
+            <option key={m} value={m}>
+              {m}
             </option>
           ))}
         </select>
