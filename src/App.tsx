@@ -33,9 +33,14 @@ function App() {
 
   return (
     <div className="app">
-      <header>
-        <h1>ClimbOn</h1>
-        <p className="subtitle">NYC Climbing Gym Finder</p>
+      <header className="app-header">
+        <div className="brand">
+          <h1>ClimbOn</h1>
+          <p className="subtitle">NYC Climbing Gym Finder</p>
+        </div>
+        <nav className="header-nav">
+          <span className="gym-count">{gyms.length} gyms across NYC</span>
+        </nav>
       </header>
       <FilterBar
         typeFilter={typeFilter}
