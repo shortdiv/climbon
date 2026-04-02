@@ -2,6 +2,7 @@
   "name": "climbon",
   "private": true,
   "version": "0.0.0",
+  "description": "NYC Climbing Gym Finder",
   "type": "module",
   "scripts": {
     "dev": "vite",
