@@ -44,7 +44,7 @@ function App() {
       <header className="app-header">
         <div className="brand">
           <h1>ClimbOn</h1>
-          <p className="subtitle">NYC Climbing Gym Finder</p>
+          <p className="subtitle">Discover climbing gyms across New York City</p>
         </div>
         <nav className="header-nav">
           <span className="gym-count">{gyms.length} gyms across NYC</span>
