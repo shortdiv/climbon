@@ -1,0 +1,32 @@
+src/components/GymCard.css
+  ce91a3eb1c95eb3a 74-86,89-95
+src/data/gyms.json
+  ce91a3eb1c95eb3a 15-16,31-32,47-48,63-64,79-80,95-96,111-112,126-127,142-143,158-159
+src/types.ts
+  ce91a3eb1c95eb3a 12
+src/components/GymCard.tsx
+  ce91a3eb1c95eb3a 43-52
+src/App.tsx
+  ce91a3eb1c95eb3a 11
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.2.4",
+  "base_commit_sha": "e6d0ed238de1bff8c062d8f425f29ad2f1eb10db",
+  "prompts": {
+    "ce91a3eb1c95eb3a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1f3e29a6-6321-4ffc-b565-27fef94af7b9",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "Divya",
+      "messages": [],
+      "total_additions": 2,
+      "total_deletions": 2,
+      "accepted_lines": 52,
+      "overriden_lines": 0,
+      "messages_url": "http://localhost:4000/cas/f7865e6c806423e1017e9088830792134048229bd4cafdb6c268b0542cc4eacb"
+    }
+  }
+}
