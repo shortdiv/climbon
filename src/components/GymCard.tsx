@@ -50,7 +50,13 @@ export function GymCard({ gym }: { gym: Gym }) {
           </div>
         </div>
       )}
-      <a href={gym.website} target="_blank" rel="noreferrer" className="website-link">
+      <a
+        href={gym.website}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="website-link"
+        aria-label={`Visit ${gym.name} website`}
+      >
         Visit website →
       </a>
     </div>
