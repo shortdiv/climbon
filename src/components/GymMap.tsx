@@ -4,9 +4,9 @@ import type { Gym } from "../types";
 import "./GymMap.css";
 
 const typeColors: Record<string, string> = {
-  bouldering: "#e07b39",
-  rope: "#3b82f6",
-  both: "#8b5cf6",
+  bouldering: "#f59e0b",
+  rope: "#38bdf8",
+  both: "#a78bfa",
 };
 
 function createIcon(type: Gym["type"]) {
@@ -32,8 +32,8 @@ export function GymMap({ gyms }: { gyms: Gym[] }) {
       className="gym-map"
     >
       <TileLayer
-        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://stadiamaps.com/">Stadia Maps</a>'
+        url="https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png"
       />
       {gyms.map((gym) => (
         <Marker key={gym.id} position={[gym.lat, gym.lng]} icon={createIcon(gym.type)}>
