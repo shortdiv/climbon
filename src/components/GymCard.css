@@ -25,6 +25,12 @@
   font-size: 1.1rem;
 }
 
+.badges {
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+
 .badge {
   color: #fff;
   font-size: 0.7rem;
@@ -33,6 +39,10 @@
   border-radius: 999px;
   text-transform: uppercase;
   white-space: nowrap;
+}
+
+.management-badge {
+  background-color: #64748b;
 }
 
 .neighborhood {

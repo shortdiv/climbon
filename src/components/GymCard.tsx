@@ -12,9 +12,14 @@ export function GymCard({ gym }: { gym: Gym }) {
     <div className="gym-card">
       <div className="gym-card-header">
         <h3>{gym.name}</h3>
-        <span className="badge" style={{ backgroundColor: typeColors[gym.type] }}>
-          {gym.type}
-        </span>
+        <div className="badges">
+          <span className="badge" style={{ backgroundColor: typeColors[gym.type] }}>
+            {gym.type}
+          </span>
+          <span className="badge management-badge">
+            {gym.management}
+          </span>
+        </div>
       </div>
       <p className="neighborhood">{gym.neighborhood}</p>
       <p className="address">{gym.address}</p>
