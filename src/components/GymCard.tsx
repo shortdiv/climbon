@@ -40,6 +40,16 @@ export function GymCard({ gym }: { gym: Gym }) {
           <span>Free / Outdoor</span>
         )}
       </div>
+      {gym.boards && gym.boards.length > 0 && (
+        <div className="boards">
+          <strong>Boards:</strong>
+          <div className="boards-list">
+            {gym.boards.map((board) => (
+              <span key={board} className="board-badge">{board}</span>
+            ))}
+          </div>
+        </div>
+      )}
       <a href={gym.website} target="_blank" rel="noreferrer" className="website-link">
         Visit website →
       </a>

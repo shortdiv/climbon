@@ -8,7 +8,7 @@ import "./App.css";
 
 type GymType = Gym["type"] | "all";
 
-const gyms: Gym[] = gymsData as Gym[];
+const gyms = gymsData as unknown as Gym[];
 
 function App() {
   const [view, setView] = useState<"map" | "list">("map");

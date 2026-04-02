@@ -71,6 +71,28 @@
   color: #334155;
 }
 
+.boards {
+  font-size: 0.8rem;
+  color: #475569;
+}
+
+.boards-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-top: 0.25rem;
+}
+
+.board-badge {
+  background: #e0f2fe;
+  color: #0369a1;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.15rem 0.5rem;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
 .website-link {
   margin-top: auto;
   font-size: 0.85rem;

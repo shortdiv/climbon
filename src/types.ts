@@ -9,4 +9,5 @@ export interface Gym {
   memberRates: { daily: number; monthly: number };
   website: string;
   neighborhood: string;
+  boards?: string[];
 }
