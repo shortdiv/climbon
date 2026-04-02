@@ -6,7 +6,7 @@ A React application for discovering and exploring climbing gyms across New York 
 
 React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A climbing gym discovery app built with React + TypeScript + Vite.
 
 Currently, two official plugins are available:
 
