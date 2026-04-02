@@ -1,0 +1,24 @@
+src/components/GymMap.tsx
+  e1eb0a2713ac50d5 1,3-4,8-23,53
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.2.4",
+  "base_commit_sha": "1460020e47ac535d3bd102efd731c10b77332f6a",
+  "prompts": {
+    "e1eb0a2713ac50d5": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6c36062c-6b6d-45b8-ab96-36222a5c36e3",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "Divya",
+      "messages": [],
+      "total_additions": 24,
+      "total_deletions": 8,
+      "accepted_lines": 21,
+      "overriden_lines": 0,
+      "messages_url": "http://localhost:4000/cas/7d44da80c7f3f824c1841a213c3f7ea2f4e2e70790e05b4f791d40ead2689ff3"
+    }
+  }
+}
