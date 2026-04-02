@@ -1,7 +1,26 @@
-import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import { MapContainer, Marker, Popup, useMap } from "react-leaflet";
 import L from "leaflet";
+import { useEffect } from "react";
+import { leafletLayer } from "protomaps-leaflet";
 import type { Gym } from "../types";
 import "./GymMap.css";
+
+const PROTOMAPS_API_KEY = import.meta.env.VITE_PROTOMAPS_API_KEY ?? "";
+
+function ProtomapsLayer() {
+  const map = useMap();
+  useEffect(() => {
+    const layer = leafletLayer({
+      url: `https://api.protomaps.com/tiles/v4.pmtiles?key=${PROTOMAPS_API_KEY}`,
+      flavor: "dark",
+    }) as unknown as L.Layer;
+    layer.addTo(map);
+    return () => {
+      map.removeLayer(layer);
+    };
+  }, [map]);
+  return null;
+}
 
 const typeColors: Record<string, string> = {
   bouldering: "#f59e0b",
@@ -31,10 +50,7 @@ export function GymMap({ gyms }: { gyms: Gym[] }) {
       zoom={12}
       className="gym-map"
     >
-      <TileLayer
-        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://stadiamaps.com/">Stadia Maps</a>'
-        url="https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png"
-      />
+      <ProtomapsLayer />
       {gyms.map((gym) => (
         <Marker key={gym.id} position={[gym.lat, gym.lng]} icon={createIcon(gym.type)}>
           <Popup>
