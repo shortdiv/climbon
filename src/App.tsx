@@ -43,7 +43,12 @@ function App() {
           <p className="subtitle">NYC Climbing Gym Finder</p>
         </div>
         <nav className="header-nav">
-          <span className="gym-count">{gyms.length} gyms across NYC</span>
+          <span className="gym-count">
+            {gyms.length} gyms across NYC
+            {(typeFilter !== "all" || neighborhoodFilter) && (
+              <span className="filter-active"> (filtered)</span>
+            )}
+          </span>
         </nav>
       </header>
       {view !== "partners" && (
