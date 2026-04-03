@@ -1,4 +1,4 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import gymsData from "./data/gyms.json";
 import partnersData from "./data/partners.json";
 import type { Gym, ClimbingPartner } from "./types";
@@ -23,6 +23,18 @@ function App() {
     () => [...new Set(gyms.map((g) => g.neighborhood))].sort(),
     []
   );
+
+  useEffect(() => {
+    const views: Array<"map" | "list" | "partners"> = ["map", "list", "partners"];
+    function handleKeyDown(e: KeyboardEvent) {
+      if (e.key === "Tab" && e.shiftKey) {
+        e.preventDefault();
+        setView((v) => views[(views.indexOf(v) + 1) % views.length]);
+      }
+    }
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, []);
 
   const filtered = useMemo(
     () =>
