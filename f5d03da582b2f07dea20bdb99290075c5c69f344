@@ -6,34 +6,5 @@ test-scenario-rebase-notes-loss.md
   "schema_version": "authorship/3.0.0",
   "git_ai_version": "development:1.2.6",
   "base_commit_sha": "f5d03da582b2f07dea20bdb99290075c5c69f344",
-  "prompts": {
-    "f146200fcbb0d433": {
-      "agent_id": {
-        "tool": "claude",
-        "id": "a060ba24-dc7a-4f24-8f3a-ce15c4df01fb",
-        "model": "claude-opus-4-6"
-      },
-      "human_author": "Divya",
-      "messages": [],
-      "total_additions": 2,
-      "total_deletions": 2,
-      "accepted_lines": 2,
-      "overriden_lines": 0,
-      "messages_url": "http://localhost:4000/cas/fb7890c4c825ca6053f0de0e05cfe8362da2141651925d1b7183e645b3871d8d"
-    },
-    "f2c92d6ca08333c9": {
-      "agent_id": {
-        "tool": "claude",
-        "id": "19255f98-f05f-4aef-98ee-a8929bfbc0d7",
-        "model": "claude-opus-4-6"
-      },
-      "human_author": "Divya",
-      "messages": [],
-      "total_additions": 0,
-      "total_deletions": 0,
-      "accepted_lines": 146,
-      "overriden_lines": 0,
-      "messages_url": "http://localhost:4000/cas/758a451a63ff57438140e55e9580b37e9215cb8cf12fd83c02675363a64f6b60"
-    }
-  }
+  "prompts": {}
 }
