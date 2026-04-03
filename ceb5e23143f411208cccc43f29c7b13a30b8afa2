@@ -19,34 +19,5 @@ src/components/PartnerList.css
   "schema_version": "authorship/3.0.0",
   "git_ai_version": "1.2.4",
   "base_commit_sha": "ceb5e23143f411208cccc43f29c7b13a30b8afa2",
-  "prompts": {
-    "25b7182d555b6ab9": {
-      "agent_id": {
-        "tool": "claude",
-        "id": "c7d753e1-c6e6-43ce-bb9b-dada169736b9",
-        "model": "claude-opus-4-6"
-      },
-      "human_author": "Divya",
-      "messages": [],
-      "total_additions": 211,
-      "total_deletions": 11,
-      "accepted_lines": 211,
-      "overriden_lines": 0,
-      "messages_url": "http://localhost:4000/cas/337ad81387cdd78b673394d577c55319cc1f68b620979bf973187dbe9cd79ff9"
-    },
-    "f2c92d6ca08333c9": {
-      "agent_id": {
-        "tool": "claude",
-        "id": "19255f98-f05f-4aef-98ee-a8929bfbc0d7",
-        "model": "claude-opus-4-6"
-      },
-      "human_author": "Divya",
-      "messages": [],
-      "total_additions": 161,
-      "total_deletions": 13,
-      "accepted_lines": 148,
-      "overriden_lines": 0,
-      "messages_url": "http://localhost:4000/cas/758a451a63ff57438140e55e9580b37e9215cb8cf12fd83c02675363a64f6b60"
-    }
-  }
+  "prompts": {}
 }
