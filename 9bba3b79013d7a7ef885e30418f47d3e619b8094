@@ -5,20 +5,5 @@ src/components/GymMap.tsx
   "schema_version": "authorship/3.0.0",
   "git_ai_version": "1.2.4",
   "base_commit_sha": "9bba3b79013d7a7ef885e30418f47d3e619b8094",
-  "prompts": {
-    "e4e05aeea0146408": {
-      "agent_id": {
-        "tool": "claude",
-        "id": "3f389ab6-5722-4142-a283-3bb5e9bac632",
-        "model": "claude-opus-4-6"
-      },
-      "human_author": "Divya",
-      "messages": [],
-      "total_additions": 5,
-      "total_deletions": 6,
-      "accepted_lines": 5,
-      "overriden_lines": 0,
-      "messages_url": "http://localhost:4000/cas/71ae928a6563cff93b5217f028e55d05eaa2760eecd72766887fe8aa7ca385f1"
-    }
-  }
+  "prompts": {}
 }
