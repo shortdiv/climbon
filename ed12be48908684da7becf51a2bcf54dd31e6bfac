@@ -5,19 +5,5 @@ package.json
   "schema_version": "authorship/3.0.0",
   "git_ai_version": "development:1.2.5",
   "base_commit_sha": "ed12be48908684da7becf51a2bcf54dd31e6bfac",
-  "prompts": {
-    "957fdf883b000e32": {
-      "agent_id": {
-        "tool": "claude",
-        "id": "52c74eff-ad1b-4c5d-8997-953b0c18d5ee",
-        "model": "claude-sonnet-4-5-20250929"
-      },
-      "human_author": "shortdiv <hello@shortdiv.com>",
-      "messages": [],
-      "total_additions": 1,
-      "total_deletions": 0,
-      "accepted_lines": 1,
-      "overriden_lines": 0
-    }
-  }
+  "prompts": {}
 }
