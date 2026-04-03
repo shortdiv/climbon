@@ -20,4 +20,5 @@ export interface ClimbingPartner {
   availability: string;
   bio: string;
   homeGym: string;
+  contact?: string;
 }

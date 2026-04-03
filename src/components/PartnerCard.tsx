@@ -31,6 +31,11 @@ export function PartnerCard({ partner }: { partner: ClimbingPartner }) {
       <p className="partner-gym">🏠 {partner.homeGym}</p>
       <p className="partner-availability">🕐 {partner.availability}</p>
       {partner.bio && <p className="partner-bio">{partner.bio}</p>}
+      {partner.contact && (
+        <a href={`mailto:${partner.contact}`} className="partner-contact">
+          Send message
+        </a>
+      )}
     </div>
   );
 }
