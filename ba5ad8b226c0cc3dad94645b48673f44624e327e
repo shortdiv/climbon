@@ -5,19 +5,5 @@ src/components/GymCard.tsx
   "schema_version": "authorship/3.0.0",
   "git_ai_version": "development:1.2.5",
   "base_commit_sha": "ba5ad8b226c0cc3dad94645b48673f44624e327e",
-  "prompts": {
-    "957fdf883b000e32": {
-      "agent_id": {
-        "tool": "claude",
-        "id": "52c74eff-ad1b-4c5d-8997-953b0c18d5ee",
-        "model": "claude-sonnet-4-5-20250929"
-      },
-      "human_author": "shortdiv <hello@shortdiv.com>",
-      "messages": [],
-      "total_additions": 7,
-      "total_deletions": 1,
-      "accepted_lines": 7,
-      "overriden_lines": 0
-    }
-  }
+  "prompts": {}
 }
