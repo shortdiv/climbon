@@ -1,38 +1,11 @@
+$(cat <<'EOF'
 src/components/PartnerCard.tsx
-  ad3b50064ea70333 33
 ---
 {
   "schema_version": "authorship/3.0.0",
-  "git_ai_version": "1.2.4",
-  "base_commit_sha": "7570543ef7960f68a9670b0d6ae2ab8c994bd2c3",
-  "prompts": {
-    "ad3b50064ea70333": {
-      "agent_id": {
-        "tool": "claude",
-        "id": "5bf682c8-e429-4773-a73b-164062aafb91",
-        "model": "claude-opus-4-6"
-      },
-      "human_author": "Divya",
-      "messages": [],
-      "total_additions": 1,
-      "total_deletions": 1,
-      "accepted_lines": 1,
-      "overriden_lines": 0,
-      "messages_url": "http://localhost:4000/cas/0f76ba79577bc9992ee8e7ed339c094f508b08c971e459ac1a85f55f7962e145"
-    },
-    "f2c92d6ca08333c9": {
-      "agent_id": {
-        "tool": "claude",
-        "id": "19255f98-f05f-4aef-98ee-a8929bfbc0d7",
-        "model": "claude-opus-4-6"
-      },
-      "human_author": "Divya",
-      "messages": [],
-      "total_additions": 0,
-      "total_deletions": 0,
-      "accepted_lines": 148,
-      "overriden_lines": 0,
-      "messages_url": "http://localhost:4000/cas/758a451a63ff57438140e55e9580b37e9215cb8cf12fd83c02675363a64f6b60"
-    }
-  }
+  "git_ai_version": "1.1.18",
+  "base_commit_sha": "ceb5e23143f411208cccc43f29c7b13a30b8afa2",
+  "prompts": {}
 }
+EOF
+)
