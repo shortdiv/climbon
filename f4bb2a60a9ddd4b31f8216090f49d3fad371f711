@@ -9,19 +9,5 @@ src/components/GymList.tsx
   "schema_version": "authorship/3.0.0",
   "git_ai_version": "development:1.2.5",
   "base_commit_sha": "f4bb2a60a9ddd4b31f8216090f49d3fad371f711",
-  "prompts": {
-    "063ffb717ef03f22": {
-      "agent_id": {
-        "tool": "claude",
-        "id": "836ed161-6ae4-42b2-9f3b-d47e4e933b42",
-        "model": "claude-sonnet-4-5-20250929"
-      },
-      "human_author": "shortdiv <hello@shortdiv.com>",
-      "messages": [],
-      "total_additions": 21,
-      "total_deletions": 29,
-      "accepted_lines": 21,
-      "overriden_lines": 0
-    }
-  }
+  "prompts": {}
 }
