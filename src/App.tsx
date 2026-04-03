@@ -6,6 +6,7 @@ import { FilterBar } from "./components/FilterBar";
 import { GymMap } from "./components/GymMap";
 import { GymList } from "./components/GymList";
 import { PartnerList } from "./components/PartnerList";
+import { Footer } from "./components/Footer";
 import "./App.css";
 
 type GymType = Gym["type"] | "all";
@@ -78,6 +79,7 @@ function App() {
       {view === "map" && <GymMap gyms={filtered} />}
       {view === "list" && <GymList gyms={filtered} />}
       {view === "partners" && <PartnerList partners={partners} />}
+      <Footer />
     </div>
   );
 }
