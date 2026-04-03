@@ -30,7 +30,7 @@ export function PartnerCard({ partner }: { partner: ClimbingPartner }) {
       <p className="neighborhood">{partner.neighborhood}</p>
       <p className="partner-gym">🏠 {partner.homeGym}</p>
       <p className="partner-availability">🕐 {partner.availability}</p>
-      <p className="partner-bio">{partner.bio}</p>
+      {partner.bio && <p className="partner-bio">{partner.bio}</p>}
     </div>
   );
 }
