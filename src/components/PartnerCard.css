@@ -1,0 +1,51 @@
+.partner-card {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  transition: box-shadow 0.2s;
+}
+
+.partner-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.partner-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.partner-card-header h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.partner-badges {
+  display: flex;
+  gap: 0.35rem;
+  flex-shrink: 0;
+}
+
+.partner-gym {
+  margin: 0;
+  color: #475569;
+  font-size: 0.85rem;
+}
+
+.partner-availability {
+  margin: 0;
+  color: #475569;
+  font-size: 0.85rem;
+}
+
+.partner-bio {
+  margin: 0;
+  color: #64748b;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}

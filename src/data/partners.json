@@ -1,0 +1,62 @@
+[
+  {
+    "id": "p1",
+    "name": "Alex Chen",
+    "neighborhood": "Williamsburg",
+    "climbingType": "bouldering",
+    "level": "intermediate",
+    "availability": "Weekday evenings",
+    "bio": "V5 climber looking for regular bouldering partners. Always down to project and share beta.",
+    "homeGym": "Brooklyn Boulders Williamsburg"
+  },
+  {
+    "id": "p2",
+    "name": "Priya Sharma",
+    "neighborhood": "Gowanus",
+    "climbingType": "rope",
+    "level": "advanced",
+    "availability": "Weekend mornings",
+    "bio": "Lead climber, 5.12a redpoint. Looking for a consistent belay partner for weekend sessions.",
+    "homeGym": "Brooklyn Boulders Gowanus"
+  },
+  {
+    "id": "p3",
+    "name": "Jordan Miles",
+    "neighborhood": "Long Island City",
+    "climbingType": "both",
+    "level": "beginner",
+    "availability": "Flexible schedule",
+    "bio": "New to climbing and loving it! Looking for patient partners to learn with.",
+    "homeGym": "The Cliffs at LIC"
+  },
+  {
+    "id": "p4",
+    "name": "Sam Okafor",
+    "neighborhood": "Bushwick",
+    "climbingType": "bouldering",
+    "level": "advanced",
+    "availability": "Weekday mornings",
+    "bio": "Competition boulderer training for the local circuit. Looking for strong partners to push each other.",
+    "homeGym": "GP81"
+  },
+  {
+    "id": "p5",
+    "name": "Maya Rodriguez",
+    "neighborhood": "Chelsea",
+    "climbingType": "rope",
+    "level": "intermediate",
+    "availability": "Tuesday & Thursday evenings",
+    "bio": "Trad climber getting back into gym shape for the spring season. Reliable belayer.",
+    "homeGym": "Chelsea Piers"
+  },
+  {
+    "id": "p6",
+    "name": "Eli Tanaka",
+    "neighborhood": "Upper West Side",
+    "climbingType": "both",
+    "level": "intermediate",
+    "availability": "Weekends",
+    "bio": "Love both bouldering and sport climbing. Always up for trying new gyms around the city.",
+    "homeGym": "The Cliffs at Harlem"
+  }
+]
