@@ -1,0 +1,28 @@
+src/types.ts
+  f146200fcbb0d433 23
+src/components/PartnerCard.css
+  f146200fcbb0d433 52-63
+src/components/PartnerCard.tsx
+  f146200fcbb0d433 34-38
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "development:1.2.6",
+  "base_commit_sha": "755ab05cd7153603bb43f35198b0c7503a00a39b",
+  "prompts": {
+    "f146200fcbb0d433": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "a060ba24-dc7a-4f24-8f3a-ce15c4df01fb",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "Divya",
+      "messages": [],
+      "total_additions": 18,
+      "total_deletions": 0,
+      "accepted_lines": 18,
+      "overriden_lines": 0,
+      "messages_url": "http://localhost:4000/cas/67d11e058a9c9ff1feb0ec8c8a4544f7c56113bc7edca160a14094d9505e31d6"
+    }
+  }
+}
