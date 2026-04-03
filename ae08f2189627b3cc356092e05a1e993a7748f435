@@ -14,33 +14,5 @@ src/data/gyms.json
   "schema_version": "authorship/3.0.0",
   "git_ai_version": "development:1.2.5",
   "base_commit_sha": "ae08f2189627b3cc356092e05a1e993a7748f435",
-  "prompts": {
-    "17a56e0aba3c62f1": {
-      "agent_id": {
-        "tool": "claude",
-        "id": "ccaa86e5-826d-46e1-a07e-029433951547",
-        "model": "claude-sonnet-4-5-20250929"
-      },
-      "human_author": "shortdiv <hello@shortdiv.com>",
-      "messages": [],
-      "total_additions": 1,
-      "total_deletions": 1,
-      "accepted_lines": 1,
-      "overriden_lines": 0
-    },
-    "ce91a3eb1c95eb3a": {
-      "agent_id": {
-        "tool": "claude",
-        "id": "1f3e29a6-6321-4ffc-b565-27fef94af7b9",
-        "model": "claude-opus-4-6"
-      },
-      "human_author": "Divya",
-      "messages": [],
-      "total_additions": 54,
-      "total_deletions": 11,
-      "accepted_lines": 53,
-      "overriden_lines": 0,
-      "messages_url": "http://localhost:4000/cas/fed2c501d88fb248ede63cbeda1a748b72f0a43477b3997442eaffe0853e73d5"
-    }
-  }
+  "prompts": {}
 }
