@@ -13,20 +13,5 @@ src/App.tsx
   "schema_version": "authorship/3.0.0",
   "git_ai_version": "1.2.4",
   "base_commit_sha": "64328303b2e9f9997152a711ec7cfea72c972a48",
-  "prompts": {
-    "ce91a3eb1c95eb3a": {
-      "agent_id": {
-        "tool": "claude",
-        "id": "1f3e29a6-6321-4ffc-b565-27fef94af7b9",
-        "model": "claude-opus-4-6"
-      },
-      "human_author": "Divya",
-      "messages": [],
-      "total_additions": 54,
-      "total_deletions": 11,
-      "accepted_lines": 54,
-      "overriden_lines": 0,
-      "messages_url": "http://localhost:4000/cas/fed2c501d88fb248ede63cbeda1a748b72f0a43477b3997442eaffe0853e73d5"
-    }
-  }
+  "prompts": {}
 }
