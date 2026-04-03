@@ -1,0 +1,26 @@
+src/App.tsx
+  f146200fcbb0d433 46-51
+src/App.css
+  f146200fcbb0d433 34-38
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "development:1.2.6",
+  "base_commit_sha": "71e0a08a1a48574441c861c3dc5cbabaeb031cd6",
+  "prompts": {
+    "f146200fcbb0d433": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "a060ba24-dc7a-4f24-8f3a-ce15c4df01fb",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "Divya",
+      "messages": [],
+      "total_additions": 11,
+      "total_deletions": 1,
+      "accepted_lines": 11,
+      "overriden_lines": 0,
+      "messages_url": "http://localhost:4000/cas/0f02ec76869dbc269a0344bd83ece53184385542034ccc946d228037527efe1c"
+    }
+  }
+}
