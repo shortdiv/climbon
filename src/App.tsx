@@ -1,17 +1,21 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import gymsData from "./data/gyms.json";
-import type { Gym } from "./types";
+import partnersData from "./data/partners.json";
+import type { Gym, ClimbingPartner } from "./types";
 import { FilterBar } from "./components/FilterBar";
 import { GymMap } from "./components/GymMap";
 import { GymList } from "./components/GymList";
+import { PartnerList } from "./components/PartnerList";
+import { Footer } from "./components/Footer";
 import "./App.css";
 
 type GymType = Gym["type"] | "all";
 
 const gyms: Gym[] = gymsData as Gym[];
+const partners: ClimbingPartner[] = partnersData as ClimbingPartner[];
 
 function App() {
-  const [view, setView] = useState<"map" | "list">("map");
+  const [view, setView] = useState<"map" | "list" | "partners">("map");
   const [typeFilter, setTypeFilter] = useState<GymType>("all");
   const [neighborhoodFilter, setNeighborhoodFilter] = useState("");
 
@@ -19,6 +23,18 @@ function App() {
     () => [...new Set(gyms.map((g) => g.neighborhood))].sort(),
     []
   );
+
+  useEffect(() => {
+    const views: Array<"map" | "list" | "partners"> = ["map", "list", "partners"];
+    function handleKeyDown(e: KeyboardEvent) {
+      if (e.key === "Tab" && e.shiftKey) {
+        e.preventDefault();
+        setView((v) => views[(views.indexOf(v) + 1) % views.length]);
+      }
+    }
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, []);
 
   const filtered = useMemo(
     () =>
@@ -39,16 +55,23 @@ function App() {
           <p className="subtitle">NYC Climbing Gym Finder</p>
         </div>
         <nav className="header-nav">
-          <span className="gym-count">{gyms.length} gyms across NYC</span>
+          <span className="gym-count">
+            {gyms.length} gyms across NYC
+            {(typeFilter !== "all" || neighborhoodFilter) && (
+              <span className="filter-active"> (filtered)</span>
+            )}
+          </span>
         </nav>
       </header>
-      <FilterBar
-        typeFilter={typeFilter}
-        onTypeChange={setTypeFilter}
-        neighborhoodFilter={neighborhoodFilter}
-        onNeighborhoodChange={setNeighborhoodFilter}
-        neighborhoods={neighborhoods}
-      />
+      {view !== "partners" && (
+        <FilterBar
+          typeFilter={typeFilter}
+          onTypeChange={setTypeFilter}
+          neighborhoodFilter={neighborhoodFilter}
+          onNeighborhoodChange={setNeighborhoodFilter}
+          neighborhoods={neighborhoods}
+        />
+      )}
       <div className="view-toggle">
         <button
           className={view === "map" ? "active" : ""}
@@ -62,9 +85,18 @@ function App() {
         >
           List
         </button>
-        <span className="count">{filtered.length} gyms</span>
+        <button
+          className={view === "partners" ? "active" : ""}
+          onClick={() => setView("partners")}
+        >
+          Partners
+        </button>
+        {view !== "partners" && <span className="count">{filtered.length} gyms</span>}
       </div>
-      {view === "map" ? <GymMap gyms={filtered} /> : <GymList gyms={filtered} />}
+      {view === "map" && <GymMap gyms={filtered} />}
+      {view === "list" && <GymList gyms={filtered} />}
+      {view === "partners" && <PartnerList partners={partners} />}
+      <Footer />
     </div>
   );
 }

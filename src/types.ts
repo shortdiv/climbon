@@ -10,3 +10,15 @@ export interface Gym {
   website: string;
   neighborhood: string;
 }
+
+export interface ClimbingPartner {
+  id: string;
+  name: string;
+  neighborhood: string;
+  climbingType: "bouldering" | "rope" | "both";
+  level: "beginner" | "intermediate" | "advanced";
+  availability: string;
+  bio: string;
+  homeGym: string;
+  contact?: string;
+}
